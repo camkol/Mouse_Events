@@ -1,10 +1,14 @@
+$color_1: #efd9ca;
+$color_2: #141c3a;
+$font-family_1: "Nunito";
+$background-color_1: #141c3a;
+
 body {
   margin: 0;
   padding: 0;
   background: green;
-  font-family: "Nunito";
+  font-family: $font-family_1;
 }
-
 #container {
   background: #efd9ca;
   width: 100%;
@@ -12,110 +16,103 @@ body {
   margin: 0;
   float: left;
 }
-
 li {
   width: 400px;
   height: 17px;
   list-style: none;
-  background-color: #141c3a;
+  background-color: $background-color_1;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 16px;
   padding: 17px 0px;
-  color: #efd9ca;
+  color: $color_1;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Nunito";
+  font-family: $font-family_1;
 }
-
 #list-item-one {
   width: 400px;
   height: 17px;
   list-style: none;
-  background-color: #141c3a;
+  background-color: $background-color_1;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 16px;
   padding: 17px 0px;
-  color: #efd9ca;
+  color: $color_1;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Nunito";
+  font-family: $font-family_1;
 }
-
 #list-item-two {
   width: 400px;
   height: 17px;
   list-style: none;
-  background-color: #141c3a;
+  background-color: $background-color_1;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 16px;
   padding: 17px 0px;
-  color: #efd9ca;
+  color: $color_1;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Nunito";
+  font-family: $font-family_1;
 }
-
 #list-item-three {
   width: 400px;
   height: 17px;
   list-style: none;
-  background-color: #141c3a;
+  background-color: $background-color_1;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 16px;
   padding: 17px 0px;
-  color: #efd9ca;
+  color: $color_1;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Nunito";
+  font-family: $font-family_1;
 }
-
 #list-item-four {
   width: 400px;
   height: 17px;
   list-style: none;
-  background-color: #141c3a;
+  background-color: $background-color_1;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 16px;
   padding: 17px 0px;
-  color: #efd9ca;
+  color: $color_1;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Nunito";
+  font-family: $font-family_1;
 }
-
 #list-item-five {
   width: 400px;
   height: 17px;
   list-style: none;
-  background-color: #141c3a;
+  background-color: $background-color_1;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 16px;
   padding: 17px 0px;
-  color: #efd9ca;
+  color: $color_1;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Nunito";
+  font-family: $font-family_1;
   display: none;
 }
-
 #reset-button {
   width: 400px;
   height: 50px;
@@ -125,25 +122,24 @@ li {
   text-align: center;
   font-size: 16px;
   padding: 17px 0px;
-  color: #141c3a;
+  color: $color_2;
   font-weight: bold;
   display: block;
   cursor: pointer;
-  font-family: "Nunito";
+  font-family: $font-family_1;
 }
-
 @media only screen and (max-width: 480px) {
   ul {
     padding: 0 5px;
+    #list-item-one,
+    #list-item-two,
+    #list-item-three,
+    #list-item-four,
+    #list-item-five,
+    #reset-button {
+      width: 300px;
+      height: 32px;
+      padding-bottom: 30px;
+    }
   }
-  ul #list-item-one,
-  ul #list-item-two,
-  ul #list-item-three,
-  ul #list-item-four,
-  ul #list-item-five,
-  ul #reset-button {
-    width: 300px;
-    height: 32px;
-    padding-bottom: 30px;
-  }
-}/*# sourceMappingURL=style.css.map */
+}
